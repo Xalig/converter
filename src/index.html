@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="./index.mjs" defer></script>
+    <title>Converter</title>
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <img src="./assets/logo.png" alt="" />
+        <nav class="nav">
+          <div class="li">БАНК</div>
+          <div class="li">БИЗНЕС</div>
+          <div class="li">ИНВЕСТИЦИИ</div>
+          <div class="li">СТРАХОВАНИЕ</div>
+          <div class="li">МОБАЙЛ</div>
+          <div class="li">ПУТЕШЕСТВИЯ</div>
+          <div class="li">РАЗВЛЕЧЕНИЯ</div>      
+      </nav>
+        <button class="login">ВОЙТИ</button>
+      </header>
+      <div class="container">
+        <div class="conv-content">
+          <p class="conv-title">Конвертер валют онлайн</p>
+        </div>
+        <div class="conv-sides">
+          <div class="conv-box" id="conv-left">
+            <div class="text">У меня есть</div>
+            <div class="buttons-box">
+              <input class="buttons" name="from-left" id="left-1" type="radio" value="RUB" checked="checked"/>
+              <label class="labels" for="left-1">RUB</label>
+              <input class="buttons" name="from-left" id="left-2" type="radio" value="USD"/>
+              <label class="labels" for="left-2">USD</label>
+              <input class="buttons" name="from-left" id="left-3" type="radio" value="EUR"/>
+              <label class="labels" for="left-3">EUR</label>
+              <input class="buttons" name="from-left" id="left-4" type="radio" value="GBP"/>
+              <label class="labels" for="left-4">GBP</label>
+            </div>
+            <div class="money-input">
+              <input
+                class="conv-input active"
+                id="input-from"
+                type="number"
+              />
+              <div class="rate" id="rate-from"></div>
+            </div>
+          </div>
+          <div class="conv-box" id="right-converter">
+            <div class="text">Хочу приобрести</div>
+            <div class="buttons-box" id="rightButtons">
+              <input class="buttons" name="to-right" id="right-1" type="radio" value="RUB"/>
+              <label class="labels" for="right-1">RUB</label>
+              <input class="buttons" name="to-right" id="right-2" type="radio" checked="checked" value="USD"/>
+              <label class="labels" for="right-2">USD</label>
+              <input class="buttons" name="to-right" id="right-3" type="radio" value="EUR"/>
+              <label class="labels" for="right-3">EUR</label>
+              <input class="buttons" name="to-right" id="right-4" type="radio" value="GBP"/>
+              <label class="labels" for="right-4">GBP</label>
+            </div>
+            <div class="money-input">
+              <input class="conv-input" id="input-in" type="number" />
+              <div class="rate" id="rate-in"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
